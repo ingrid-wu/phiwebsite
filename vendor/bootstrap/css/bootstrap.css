@@ -5065,6 +5065,7 @@ input[type="button"].btn-block {
 }
 
 .progress-bar {
+  font-family: 'Lora', 'Times New Roman', serif;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
