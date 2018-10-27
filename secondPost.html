@@ -50,17 +50,17 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/thirdWeek/stupid.jpg')">
+    <header class="masthead" style="background-image: url('img/secondWeek/group.png')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Third Week</h1>
-              <h2 class="subheading">The Phi Pledge Class builds out initial prototypes and continues to weld.</h2>
+              <h1>Second Week</h1>
+              <h2 class="subheading">The Phi Pledge Class receives materials and begins building out electronics.</h2>
               <span class="meta">Posted by
                 <a href="#">Ingrid Wu</a>
-                on October 26, 2018</span>
+                on October 19, 2018</span>
             </div>
           </div>
         </div>
@@ -72,20 +72,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <h2 class="section-heading">Welding Update</h2>
+            <h2 class="section-heading">Structural Update</h2>
 
-            <p>Emily Wong and Phoebe finished cutting the last few pieces of flat, angle bar, and sheet metal. This past week, after going through a tough training program, they began welding the mailbox! First they set up the four posts that made up the main structure of the mailbox. They first welded the angle bar and flat bars together. This took roughly 2 sessions at Jacobs Hall. Following that, they attached the sheet metal to the inside of the bars. Construction of the mailbox this previous week was delayed due to worker union protests going on at UC Berkeley. However, Phoebe and Emily Wong are excited to start again next week!</p>
+            <p>Emily Wong & Phoebe have finished cutting and grinding all of the angle brackets and metal sheets to the specified dimensions. They consulted with one of the brothers, Jasper, about our final design and potential obstacles we could face and solutions to those obstacles. This week, Emily Wong & Phoebe have just been practicing their welding skills to ensure that they have the ability to create a structurally stable mailbox. The Davis Shop Leads have been very helpful and gave them lots of instruction to improve their welds. We have updated our design and have decided not to rivet the mailbox anymore since the Shop Leads pointed out that the rivets would be too time consuming and not necessary for structural support. Phoebe and Emily Wong plan to weld together the entire frame next week and then start incorporating the electronic components that HaiTao and Kevin have been working on.</p>
 
             <a href="#">
-              <img class="img-fluid" src="img/thirdWeek/frame.jpg" alt="">
+              <img class="img-fluid" src="img/secondWeek/wow.jpg" alt="">
             </a>
-            <span class="caption text-muted">Emily Wong and Phoebe Lin with the main mailbox frame!</span>
+            <span class="caption text-muted">Emily Wong and Phoebe Lin working in Davis Shop.</span>
 
             <!-- <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote> -->
 
-            <h2 class="section-heading">Hello World</h2>
+            <h2 class="section-heading">Initial Slackbot Work</h2>
 
-            <p>All materials for the electronic components arrived this past week. The Phi Pledge Class had been waiting on their solar panels for two weeks and were very excited to see them finally arrive. Emily Hu, HaiTao, and Kevin presented their working prototype last Friday to the class and everyone was very surprised to see the Slack connected to the sensors. This week, the three have been calibrating and testing the current prototype and working on the addition of a few more sensors to add to the interior of the mailbox. The Phi Pledge Class will order more sensors and add those in during the upcoming weeks.</p>
+            <p>Kevin and HaiTao spent a night at Varsity lounge working on the initial Slackbot and learning how to interact with the Slack API. They researched and spent two hours understanding the technology behind the Slack API and Raspberry Pi. After such research they were able to query the Slackbot with certain commands and get custom responses and actions done. With the basic Slackbot implemented and ready to go, they are currently waiting for the ultrasonic sensors to arrive in the mail so that they can connect them and integrate the sensor functionality into the Slackbot.</p>
+
+            <h2 class="section-heading">Connecting the Ultrasonic Sensors</h2>
+
+            <p>Emily Hu and HaiTao set up the circuit for the ultrasonic sensors and connected the ultrasonic sensor to the Raspberry Pi. The circuit setup needed a 1K Ohm resistor that we were not able to acquire at the time. However, they were able to put 2 2K Ohm resistors in parallel that replicated a 1K Ohm resistor. Once the circuitry was set up, Emily Hu and HaiTao ran a Python script off of the Raspberry Pi that read the pulses from the ultrasonic sensor and then used the pulse time to calculate the distance any object was away from the sensor. The Slackbot Python script was then updated with the newly written sensor scripts which read for any movement within 15cm of the sensor. The script then was programmed to send a notification to the Slackbot and update the Slack Channel accordingly.</p>
 
           </div>
         </div>
