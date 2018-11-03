@@ -50,17 +50,17 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/thirdWeek/stupid.jpg')">
+    <header class="masthead" style="background-image: url('img/fourthWeek/sleepover.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Third Week</h1>
-              <h2 class="subheading">The Phi Pledge Class builds out initial prototypes and continues to weld.</h2>
+              <h1>Fourth Week</h1>
+              <h2 class="subheading">The Phi Pledge Class hustles for their EP presentation.</h2>
               <span class="meta">Posted by
                 <a href="#">Ingrid Wu</a>
-                on October 26, 2018</span>
+                on November 2, 2018</span>
             </div>
           </div>
         </div>
@@ -72,21 +72,46 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <h2 class="section-heading">Welding Update</h2>
+            <h2 class="section-heading">The Mailbox’s First Full Assembly</h2>
 
-            <p>Emily Wong and Phoebe finished cutting the last few pieces of flat, angle bar, and sheet metal. This past week, after going through a tough training program, they began welding the mailbox! First they set up the four posts that made up the main structure of the mailbox. They first welded the angle bar and flat bars together. This took roughly 2 sessions at Jacobs Hall. Following that, they attached the sheet metal to the inside of the bars. Construction of the mailbox this previous week was delayed due to worker union protests going on at UC Berkeley. However, Phoebe and Emily Wong are excited to start again next week!</p>
+            <p>With just 35% done at the start of the week, the Phis were able to pull everything together and create a fully functioning first iteration of the Phiiine Box. Phoebe and Emily W went into Davis Shop all day on Wednesday and Thursday and finished up welding all of the side sheet metal panels and then proceeded to assembling and attaching the doors and necessary hinges/handles. After they finished the main construction of the mailbox, the mailbox was transported to Jarek’s place for final touches (sealant & painting, etc.) and to add electronic components. The Phis were able to successfully complete their final project which featured slack notifications for delivered packages and a one-way door at the top to prevent theft. 
+
+            However, our minimum viable product did have a lot of faults. The brothers pointed out a lot of security, functionality, as well as weatherproofing concerns on the current Phiiine box. Thus, the Phis will need to step it up once more and make some more adjustments to polish off the mailbox. A more extensive list of updates can be found below in the Updates & Fixes: Frame section.
+            </p>
 
             <a href="#">
-              <img class="img-fluid" src="img/thirdWeek/frame.jpg" alt="">
+              <img class="img-fluid" src="img/fourthWeek/mailFront.jpg" alt="">
             </a>
-            <span class="caption text-muted">Emily Wong and Phoebe Lin with the main mailbox frame!</span>
+            <span class="caption text-muted">The finished Phiiine Box!</span>
+
+            <a href="#">
+              <img class="img-fluid" src="img/fourthWeek/mailSide.jpg" alt="">
+            </a>
+            <span class="caption text-muted">Side view of the Phiiine Box.</span>
 
             <!-- <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote> -->
 
-            <h2 class="section-heading">Hello World</h2>
+            <h2 class="section-heading">Testing and Addition of Power Source</h2>
 
-            <p>All materials for the electronic components arrived this past week. The Phi Pledge Class had been waiting on their solar panels for two weeks and were very excited to see them finally arrive. Emily Hu, HaiTao, and Kevin presented their working prototype last Friday to the class and everyone was very surprised to see the Slack connected to the sensors. This week, the three have been calibrating and testing the current prototype and working on the addition of a few more sensors to add to the interior of the mailbox. The Phi Pledge Class will order more sensors and add those in during the upcoming weeks.</p>
+            <p>At the start of the week, the Slackbot had been fully functional; however, Emily H. and HaiTao Zhang still had to connect the solar panel to all the other power components, namely the battery pack and the PowerBoost capacitor. After reconsidering options for solar panel placement, they decided it would be best to get an extension cord so that we would be able to mount the solar panel on the actual house without the restriction of power cord length. This should also greatly decrease chances of the solar panel being stolen. Once all the power components and their arrangement were figured out, the next step was combining everything with the already wired sensors to adjust the sensing distance and edit parameters in the program itself and calibrate the sensors to the unique dimensions of our mailbox.</p>
 
+            <h2 class="section-heading">Mailbox Updates and Fixes</h2>
+
+            <p>After running through the first iteration with the brothers at their first EP Presentation, the Phi class noted the following changes to make to their mailbox.</p>
+
+            <h3 class="blockquote">The Electronics</h3>
+            <p>Adding on to the mailbox’s functionality, we will be editing the code behind our hardware so that the sensors are not only able to detect when there is a package delivered but also able to determine whether or not the main mail compartment is empty or has a package of some sort. To implement this, we will simply determine the average measurement of the distance from the sensors to the back of the mailbox, along with an appropriate corresponding margin of error. We will assign a variable to this value in the code and, anytime a status request is received, the program will compare the predetermined distance of an empty mailbox and the current distance measurement to determine whether or not the difference is great enough to indicate that a package has indeed been delivered and dropped into the package compartment, shortening the distance between the sensors and the opposing surface. The final step will then be to output this information in a clear way through the Slackbot to the user.</p>
+            
+            <h3 class="blockquote">The Frame</h3>
+            <p>A lot of the criticism that the brothers had about our mailbox was mainly concerning theft and waterproofing. Since we were on a time crunch, Phoebe and Emily didn’t get a chance to add additional features to the mailbox such as flat bars to be welded on top of the gap where the two pieces of sheet metal meet on the sides of the mailbox. They also didn’t get a chance to add a door stopper and rubber trim along the edges of the doors so that the mailbox would be more flush/protective. Since we were given an additional week to work on EP, Phoebe and Emily will make all of the necessary adjustments to ensure that the mailbox is up to the brotherhood’s standards. New CAD designs can be found below.</p>
+            <a href="#">
+              <img class="img-fluid" src="img/fourthWeek/cadColor.png" alt="">
+            </a>
+            <a href="#">
+
+              <img class="img-fluid" src="img/fourthWeek/cad1.png" alt="">
+            </a>
+            <span class="caption text-muted">Design Sketches</span>
           </div>
         </div>
       </div>
